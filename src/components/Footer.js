@@ -42,7 +42,7 @@ function Footer() {
                 </div>
             </div>
             <div>
-                <p style={{fontSize: 13}}>Desgined by Interior Showcase</p>
+                <p style={{fontSize: 13}}>Designed by Interior Showcase</p>
             </div>
         </div>
     )

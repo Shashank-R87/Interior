@@ -21,7 +21,7 @@ function Home() {
         </div>
         <div style={{ padding: "25px 50px", display: 'flex', gap: 10, justifyContent: "space-between", alignItems: 'end', paddingBottom: 50 }}>
           <p style={{ fontWeight: 600, fontSize: 48, lineHeight: 1.1 }}>We are a passionate team of interior designers with over 10 years of experience.</p>
-          <p style={{ textAlign: 'right', fontSize: 14 }}>Explore our portfolio and get inspired by our stunning interior designs. We are evailable for freelance projects, so feel free to reach out to us.</p>
+          <p style={{ textAlign: 'right', fontSize: 14 }}>Explore our portfolio and get inspired by our stunning interior designs. We are available for freelance projects, so feel free to reach out to us.</p>
         </div>
         <div style={{ padding: "0px 50px" }}>
           <img src={home_main} style={{ width: "100%", borderRadius: 10, objectFit: "cover", height: 750 }} />
