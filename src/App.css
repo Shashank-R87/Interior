@@ -2,8 +2,22 @@
 
 body{
   font-family: "Poppins";
+  overflow: scroll;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 h1, p{
   margin: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+}
+
+.addOverlay{
+  background-color: green;
 }

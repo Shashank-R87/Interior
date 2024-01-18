@@ -1,8 +1,11 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <div style={{ height: "100vh" }}>
+      <NavBar />
+    </div>
   )
 }
 
