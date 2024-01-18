@@ -8,6 +8,7 @@ import write from "../assets/write.png"
 import home_main from "../assets//images/home_main.jpg"
 import people_group from "../assets//images/people_group.jpg"
 import ProjectTab from '../components/ProjectTab'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -89,11 +90,12 @@ function Home() {
             <ProjectTab />
             <ProjectTab />
           </div>
-          <div>
-            <p>View More Projects</p>
+          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: "100%"}}>
+            <p style={{backgroundColor: "#e9e9e9", padding: "10px 30px", borderRadius: 10, fontSize: 14}}>View More Projects</p>
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }
