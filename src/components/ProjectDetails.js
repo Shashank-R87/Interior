@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavBar from './NavBar'
 import { useLocation } from 'react-router-dom'
 import Footer from './Footer';
 
 function ProjectDetails() {
+
+    useEffect(()=>{
+        window.scrollTo({top: 0, left: 0, behavior: "instant"})
+    }, [])
 
     const location = useLocation();
 
