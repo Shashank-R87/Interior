@@ -85,10 +85,10 @@ function Home() {
         <div style={{ padding: "40px 50px", display: 'flex', justifyContent: 'start', alignItems: 'start', flexDirection: 'column', gap: 20 }}>
           <p style={{ fontStyle: "italic" }}>// Our Work</p>
           <div style={{ width: "100%", display: 'grid', gridTemplateColumns: "auto auto", gap: 20 }}>
-            <ProjectTab />
-            <ProjectTab />
-            <ProjectTab />
-            <ProjectTab />
+            <ProjectTab projectID={"Project 1"}/>
+            <ProjectTab projectID={"Project 2"}/>
+            <ProjectTab projectID={"Project 3"}/>
+            <ProjectTab projectID={"Project 4"}/>
           </div>
           <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: "100%"}}>
             <p style={{backgroundColor: "#e9e9e9", padding: "10px 30px", borderRadius: 10, fontSize: 14}}>View More Projects</p>
