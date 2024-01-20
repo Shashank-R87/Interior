@@ -13,7 +13,7 @@ function ProjectDetails() {
 
     return (
         <div style={{overflowX: "hidden"}}>
-            <NavBar />
+            <NavBar currentPath={'/projects'} />
             <div style={{ padding: "40px 50px", display: 'flex', justifyContent: 'space-between', alignItems: 'start', gap: 50, paddingTop: 100 }}>
                 <div style={{ display: 'flex', gap: 10 }}>
                     <div style={{ display: 'flex', flexDirection: "column", gap: 10 }}>
