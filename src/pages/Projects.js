@@ -1,23 +1,27 @@
 import React from 'react'
 import NavBar from '../components/NavBar'
 import PortfolioTab from '../components/PortfolioTab'
+import Footer from '../components/Footer'
 
 function Projects() {
   return (
-    <div style={{ height: "100vh"}}>
+    <div>
       <NavBar />
-      <h1 style={{ padding: "40px 50px", display: 'flex', justifyContent: 'start', alignItems: 'start', flexDirection: 'column', gap: 20 }}>
+      <h1 style={{ padding: "50px 50px", display: 'flex', justifyContent: 'start', alignItems: 'start', flexDirection: 'column', fontWeight: 600, fontSize: 48 }}>
         Explore our Portfolio
-      </h1>   
+      </h1>
 
-      <div style={{ width: "100%", padding: "120px 120px 20px 50px", display: 'grid', gridTemplateColumns: "auto auto", gap: 25 }}>
-        <PortfolioTab />
-        <PortfolioTab />
-        <PortfolioTab />
-        <PortfolioTab />
+      <div style={{padding: "40px 50px", paddingBottom: 100}}>
+        <div style={{ width: "100%", display: 'grid', gridTemplateColumns: "auto auto", gap: 20 }}>
+          <PortfolioTab projectID={"Project 1"} />
+          <PortfolioTab />
+          <PortfolioTab />
+          <PortfolioTab />
+        </div>
       </div>
+      <Footer />
     </div>
-    
+
   )
 }
 
