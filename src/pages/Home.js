@@ -9,8 +9,12 @@ import home_main from "../assets//images/home_main.jpg"
 import people_group from "../assets//images/people_group.jpg"
 import ProjectTab from '../components/ProjectTab'
 import Footer from '../components/Footer'
+import { useNavigate } from 'react-router-dom'
 
 function Home() {
+
+  const navigate = useNavigate();
+
   return (
     <div>
       <NavBar />
@@ -85,13 +89,13 @@ function Home() {
         <div style={{ padding: "40px 50px", display: 'flex', justifyContent: 'start', alignItems: 'start', flexDirection: 'column', gap: 20 }}>
           <p style={{ fontStyle: "italic" }}>// Our Work</p>
           <div style={{ width: "100%", display: 'grid', gridTemplateColumns: "auto auto", gap: 20 }}>
-            <ProjectTab projectID={"Project 1"}/>
-            <ProjectTab projectID={"Project 2"}/>
-            <ProjectTab projectID={"Project 3"}/>
-            <ProjectTab projectID={"Project 4"}/>
+            <ProjectTab projectID={{name: "Project 1"}}/>
+            <ProjectTab projectID={{name: "Project 2"}}/>
+            <ProjectTab projectID={{name: "Project 3"}}/>
+            <ProjectTab projectID={{name: "Project 4"}}/>
           </div>
           <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: "100%"}}>
-            <p style={{backgroundColor: "#e9e9e9", padding: "10px 30px", borderRadius: 10, fontSize: 14}}>View More Projects</p>
+            <button onClick={()=>{navigate("/projects")}} style={{backgroundColor: "#e9e9e9", padding: "10px 30px", borderRadius: 10, fontSize: 14, border: 0, cursor: 'pointer'}}>View More Projects</button>
           </div>
         </div>
       </div>

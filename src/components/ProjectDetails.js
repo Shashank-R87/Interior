@@ -12,7 +12,7 @@ function ProjectDetails() {
     const location = useLocation();
 
     return (
-        <div>
+        <div style={{overflowX: "hidden"}}>
             <NavBar />
             <div style={{ padding: "40px 50px", display: 'flex', justifyContent: 'space-between', alignItems: 'start', gap: 50, paddingTop: 100 }}>
                 <div style={{ display: 'flex', gap: 10 }}>
@@ -26,7 +26,7 @@ function ProjectDetails() {
                 <div style={{ display: 'flex', justifyContent: "space-evenly", width: "100%", alignItems: 'start', flexDirection: 'column', minHeight: 470 }}>
                     <p style={{ backgroundColor: 'black', padding: "10px 20px", color: 'white', borderRadius: 10, boxShadow: 0, border: 0, fontSize: 14 }}>View Details</p>
                     <h1 style={{ fontWeight: 400, fontSize: 32, paddingTop: 40 }}>Project Name</h1>
-                    <h1 style={{ fontWeight: 400, fontSize: 48, paddingBottom: 40 }}>{location.state.data}</h1>
+                    <h1 style={{ fontWeight: 400, fontSize: 48, paddingBottom: 40 }}>{location.state.data.name}</h1>
                     <div style={{ display: 'flex', gap: 40, justifyContent: 'center', alignItems: 'center', width: "100%" }}>
                         <p>Quantity</p>
                         <p style={{ backgroundColor: "#e9e9e9", padding: "10px 20px", flexGrow: 1, textAlign: "center", borderRadius: 5 }}>- 1 +</p>
