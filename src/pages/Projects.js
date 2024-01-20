@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import PortfolioTab from '../components/PortfolioTab'
 import Footer from '../components/Footer'
+import { useLocation } from 'react-router-dom'
 
 const details = [{ name: 'Our Services', tags: ["UX Design", "UI Design", "Branding"] },
 { name: 'Project Quizzard', tags: ["UI Design"] },
@@ -15,10 +16,12 @@ function Projects() {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "instant" })
   }, [])
+  
+  const location = useLocation();
 
   return (
     <div>
-      <NavBar />
+      <NavBar currentPath={location.pathname} />
       <h1 style={{ padding: "50px 50px", display: 'flex', justifyContent: 'start', alignItems: 'start', flexDirection: 'column', fontWeight: 600, fontSize: 48 }}>
         Explore our Portfolio
       </h1>

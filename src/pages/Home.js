@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NavBar from '../components/NavBar'
 import home from "../assets/home.png"
 import puzzle from "../assets/puzzle.png"
@@ -9,15 +9,20 @@ import home_main from "../assets//images/home_main.jpg"
 import people_group from "../assets//images/people_group.jpg"
 import ProjectTab from '../components/ProjectTab'
 import Footer from '../components/Footer'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 function Home() {
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" })
+  }, [])
+
+  const location = useLocation();
   const navigate = useNavigate();
 
   return (
     <div>
-      <NavBar />
+      <NavBar currentPath={location.pathname} />
       <div style={{ display: "flex", flexDirection: 'column' }}>
         <div style={{ padding: "0px 50px", display: "flex", gap: 5, justifyContent: 'start', alignItems: 'center', paddingTop: 40 }}>
           <img src={home} style={{ width: 18, height: 18 }} />
@@ -95,7 +100,7 @@ function Home() {
             <ProjectTab projectID={{name: "Project 4"}}/>
           </div>
           <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: "100%"}}>
-            <button onClick={()=>{navigate("/projects")}} style={{backgroundColor: "#e9e9e9", padding: "10px 30px", borderRadius: 10, fontSize: 14, border: 0, cursor: 'pointer'}}>View More Projects</button>
+            <button className='button' onClick={()=>{navigate("/projects")}} style={{backgroundColor: "#e9e9e9", padding: "10px 30px", borderRadius: 10, fontSize: 14, border: 0, cursor: 'pointer'}}>View More Projects</button>
           </div>
         </div>
       </div>

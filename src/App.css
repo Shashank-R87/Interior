@@ -21,3 +21,28 @@ a{
 .addOverlay{
   background-color: green;
 }
+
+.button{
+  transition: all ease-in-out 200ms;
+}
+
+.button:hover{
+  transform: scale(101%);
+}
+
+.button:focus{
+  transform: scale(98%);
+}
+
+.current{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.current::after{
+  position: absolute;
+  content: "•";
+  color: lime;
+  top: 32px;
+}
